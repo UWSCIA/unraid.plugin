@@ -1,0 +1,27 @@
+Menu="Dashboard"
+Icon="plugin.png"
+---
+<?php
+
+    $plugin_cfg = parse_plugin_cfg('poe.hello_world', true);
+
+?>
+
+<style type="text/css">
+    @import url("/plugins/poe.hello_world/css/style.css");
+</style>
+
+<table id='db-box1' class='dash_poe.hello_world dashboard box1' style='display:none'>
+    <thead sort='953'><tr class='hidden'><td></td><td colspan='3'></td><td></td></tr></thead>
+    <tbody sort='953' class='sortable'>
+        Hello_World
+    </tbody>
+</table>
+<script type="text/javascript" src="/plugins/poe.hello_world/scripts/script.js"></script>
+<script type="text/javascript">
+    //$(gpustat_status);
+    //if (<?=$gpustat_cfg['UIREFRESH'];?>) {
+    //    setInterval(gpustat_status, <?=max(abs($display['refresh']), $gpustat_cfg['UIREFRESHINT']);?>);
+    //}
+    //$(gpustat_dash);
+</script>
