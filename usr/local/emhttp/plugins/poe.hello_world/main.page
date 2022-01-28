@@ -1,0 +1,15 @@
+Menu="Buttons"
+Title="Hello_World"
+Icon="edit"
+Code="f044"
+---
+<?
+###################################
+#     Hello_World (Hello_World)     #
+# Copyright <Year>, <Authour> #
+###################################
+$URI = str_replace("?","/",$_SERVER['REQUEST_URI']);
+
+$currentUnraidPage = basename($URI);
+$fileExists = is_file("/boot/config/plugins/page.notes/pages/$currentUnraidPage");
+?>
